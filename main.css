@@ -2,49 +2,19 @@
 //Language:        CSS
 //Date:            03/16/2016
 
-body{
-  background: #000;
-  padding-top: 10px;
-} 
-
-p{
-  color: lime; 
-  font-family: "Courier";
-  font-size: 20px;
-  margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  animation: type 4s steps(60, end); 
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #222222;
+    z-index: 1000;
 }
-
-p:nth-child(2){
-  animation: type2 8s steps(60, end);
+ 
+#loader-wrapper .loader-section.section-left {
+    left: 0;
 }
-
-p a{
-  color: lime;
-  text-decoration: none;
-}
-
-span{
-  animation: blink 1s infinite;
-}
-
-@keyframes type{ 
-  from { width: 0; } 
-} 
-
-@keyframes type2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; } 
-} 
-
-@keyframes blink{
-  to{opacity: .0;}
-}
-
-::selection{
-  background: black;
+ 
+#loader-wrapper .loader-section.section-right {
+    right: 0;
 }
