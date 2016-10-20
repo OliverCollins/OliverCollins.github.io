@@ -4,4 +4,8 @@ Personal website that includes a little bit about myself. I will add a quick pre
 
 ![Picture](http://i63.tinypic.com/2hnrig3.png)
 
+Helpful Links
+
 https://ihatetomatoes.net/create-custom-preloading-screen/
+
+
