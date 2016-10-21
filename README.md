@@ -4,6 +4,8 @@ Personal website that includes a little bit about myself. I will add a quick pre
 
 ### Helpful Links
 
+#### Left off at: 6:35
+
 https://ihatetomatoes.net/create-custom-preloading-screen/
 
 
