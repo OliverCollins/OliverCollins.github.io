@@ -15,6 +15,10 @@ p {
     color: #7E7E7E;
 }
 
+h1 {
+    color: #EEEEEE;   
+}
+
 .loaded #loader-wrapper .loader-section.section-left {
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
@@ -59,6 +63,7 @@ p {
     border-top-color: #3498db;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
+    z-index: 1001;
 }
 
 #loader:before {
