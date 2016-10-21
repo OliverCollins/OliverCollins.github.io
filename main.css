@@ -5,7 +5,7 @@
 
 .chromeframe {
     margin: 0.2em 0;
-    background: #ff4500;
+    background: #ccc;
     color: #000;
     padding: 0.2em 0;
 }
@@ -16,7 +16,7 @@ p {
 }
 
 h1 {
-    color: #ff4500;   
+    color: #EEEEEE;   
 }
 
 .loaded #loader-wrapper .loader-section.section-left {
