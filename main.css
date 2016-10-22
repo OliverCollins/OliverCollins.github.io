@@ -138,6 +138,26 @@ h1 {
     right: 0;
 }
 
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.loader #loader {
+    opacity: 0;   
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+}
+
 #content {
     margin: 0 auto;
     padding-bottom: 50px;
