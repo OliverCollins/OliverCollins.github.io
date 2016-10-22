@@ -138,6 +138,13 @@ h1 {
     right: 0;
 }
 
+#content {
+    margin: 0 auto;
+    padding-bottom: 50px;
+    width: 80%;
+    max-width: 978px;
+}
+
 .ir {
     background-color: transparent;
     border: 0;
