@@ -75,7 +75,7 @@ h1 {
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #FF9900; /* #e74c3c */
+    border-top-color: #FF6600; /* #e74c3c */
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
