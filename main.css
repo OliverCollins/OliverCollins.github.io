@@ -75,7 +75,7 @@ h1 {
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #C0C0C0; /* #e74c3c */
+    border-top-color: #000000 ; /* #e74c3c */
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
@@ -89,7 +89,7 @@ h1 {
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #282828; /* #f9c922 */
+    border-top-color: #C0C0C0; /* #f9c922 */
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
