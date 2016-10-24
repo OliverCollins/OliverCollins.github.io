@@ -6,6 +6,7 @@ Personal website that includes a little bit about myself. I will add a quick pre
 
 http://css3please.com/ <br />
 https://ihatetomatoes.net/create-custom-preloading-screen/ <br />
-http://www.albinotonnina.com/
+http://www.albinotonnina.com/ <br />
+https://www.youtube.com/watch?v=qpWlaOeGZ_4
 
 
