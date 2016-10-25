@@ -9,10 +9,10 @@
     position: relative;
     right: 250px;
     opacity: 0;
-    animation-name: fadeInLeft;
-    animation-duration: 1.2s;
+    animation-name: fadeInBelow;
+    animation-duration: 2s;
     animation-fill-mode: inherit;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
 }
 
 * {
@@ -220,11 +220,26 @@ p {
             transition: all 0.3s 1s ease-out; 
 }
 
+#intro {
+    padding-bottom: 187px;
+}
+
 #content {
     margin: 0 auto;
     padding-bottom: 110px;
     width: 80%;
     max-width: 978px;
+}
+
+@keyframes fadeInBelow {
+	from {
+		 opacity: 0;
+		 transform: translateY(20px);
+	}
+	to {
+		 opacity: 1;
+		 transform: translateY(0);
+	}
 }
 
 /*header {
