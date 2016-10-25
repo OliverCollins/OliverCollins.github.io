@@ -3,6 +3,11 @@
 //Date:            03/16/2016
 
 
+//Programmer:      Oliver Collins
+//Language:        CSS
+//Date:            03/16/2016
+
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +20,7 @@ h1 {
     color: #4A4444;
     text-transform: uppercase;
     letter-spacing: 1%;
-    margin: 45% 0;
+    margin: 90% 0;
 }
 
 h2 {
@@ -33,10 +38,9 @@ h2 {
 }
 
 .parallax-inner {
-    padding-top: 6%;
-    padding-bottom: 6%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
-
 
 /*End of Parallax*/
 
@@ -52,9 +56,9 @@ p {
     color: #7E7E7E;
 }
 
-h1 {
+/*h1 {
     color: #EEEEEE;   
-}
+}*/
 
 .loaded #loader-wrapper .loader-section.section-left {
     -webkit-transform: translateX(-100%);
