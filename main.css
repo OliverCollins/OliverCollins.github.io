@@ -1,12 +1,6 @@
 //Programmer:      Oliver Collins
 //Language:        CSS
-//Date:            03/16/2016
-
-
-//Programmer:      Oliver Collins
-//Language:        CSS
-//Date:            03/16/2016
-
+//Last Updated:    10/25/2016
 
 * {
     margin: 0;
@@ -34,12 +28,12 @@ h2 {
 /*Start of Parallax*/
 
 .parallax {
-    background: url("https://images.unsplash.com/photo-1415795854641-f4a487a0fdc8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=76daf4579ba9af23133e17d9bf5325bc");   
+    background: url("https://images.unsplash.com/photo-1462332420958-a05d1e002413?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=ef277029c59be582f492b216e9db88f9") fixed;   
 }
 
 .parallax-inner {
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 /*End of Parallax*/
@@ -91,8 +85,7 @@ p {
     z-index: 1000;
 }
 
-/* Outer */
-
+/* Outer Spinner*/
 #loader {
     display: block;
     position: relative;
@@ -109,6 +102,7 @@ p {
     z-index: 1001;
 }
 
+/* Middle Spinner */
 #loader:before {
     content: "";
     position: absolute;
@@ -123,6 +117,7 @@ p {
     animation: spin 3s linear infinite;
 }
 
+/* Inner Spinner */
 #loader:after {
     content: "";
     position: absolute;
@@ -345,4 +340,3 @@ p {
         page-break-after: avoid;
     }
 }
-
