@@ -32,6 +32,11 @@ h2 {
     background: url("https://images.unsplash.com/photo-1415795854641-f4a487a0fdc8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=76daf4579ba9af23133e17d9bf5325bc");   
 }
 
+.parallax-inner {
+    padding-top: 18%;
+    padding-bottom: 18%;
+}
+
 
 /*End of Parallax*/
 
