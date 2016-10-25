@@ -2,14 +2,6 @@
 //Language:        CSS
 //Last Updated:    10/25/2016
 
-header {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
-
 #caption {
     margin-left: auto;
     margin-right: auto;
@@ -19,7 +11,7 @@ header {
     opacity: 0;
     animation-name: fadeInLeft;
     animation-duration: 1.2s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: inherit;
     animation-delay: 1.5s;
 }
 
@@ -230,10 +222,19 @@ p {
 
 #content {
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 110px;
     width: 80%;
     max-width: 978px;
 }
+
+/*header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}*/
+
 
 .ir {
     background-color: transparent;
