@@ -232,8 +232,10 @@ p {
 }
 
 footer {
-	background-color: #f5f5f5;
-	display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width; 978px;
+    padding-bottom: 30px;
 }
 
 
