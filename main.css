@@ -231,6 +231,12 @@ p {
     max-width: 978px;
 }
 
+footer {
+	background-color: #f5f5f5;
+	display: block;
+}
+
+
 @keyframes fadeInBelow {
 	from {
 		 opacity: 0;
