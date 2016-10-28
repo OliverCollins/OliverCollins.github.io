@@ -1,8 +1,10 @@
 # OliverCollins.github.io
 
-Personal website that includes a little bit about myself.
+Personal website that includes a little bit about myself. <br />
 
 ![Picture](http://fontmeme.com/embed.php?text=Oliver%20Collins&name=Notera_PersonalUseOnly.ttf&size=100&style_color=000000" alt="Signature Fonts)
+
+<br />
 
 ### Resources
 
