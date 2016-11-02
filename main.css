@@ -4,12 +4,22 @@ header {
   flex-direction: column;
   text-align: center;
   vertical-align: middle;
-  justify-content: center;
+  justify-content: center;  /* vertical align text */
 }
 
 footer {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     max-width; 978px;
     padding-bottom: 30px;
+    background-color: hsla(0, 0%, 53%, 0.9);
+}
+
+footer > h4 {
+    padding-top: 15px;
+    padding-left: 50px;
+}
+
+footer > i {
+  padding-left: 50px;
 }
