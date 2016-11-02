@@ -1,27 +1,10 @@
-#caption {
-    font-family: 'Dosis', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    position: relative;
-    right: 200px;
-    opacity: 0;
-    animation-name: fadeInBelow;
-    animation-duration: 2s;
-    animation-fill-mode: inherit;
-    animation-delay: 10s;
-}
-
-
-#intro {
-    height: 75vh;
-}
-
-#content {
-    margin: 0 auto;
-    padding-bottom: 110px;
-    width: 90%;
-    max-width: 978px;
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
 }
 
 footer {
@@ -30,4 +13,3 @@ footer {
     max-width; 978px;
     padding-bottom: 30px;
 }
-
