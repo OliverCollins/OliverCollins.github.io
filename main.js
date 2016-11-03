@@ -1,8 +1,11 @@
-$(document).ready(function() {
+$(function() {
+
+  $('html').removeClass('no-js').addClass('js');
   
-  setTimeout(function() {
-    $('body').addClass('loaded');
-    $('h1').css('color', '#222222')
-  }, 3000);
-  
+  $('#typed').typed({
+    stringsElement: $('#typed-strings'),
+    loop: true,
+    backDelay: 2000
+  })
+
 });
