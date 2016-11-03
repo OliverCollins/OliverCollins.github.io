@@ -1,4 +1,5 @@
 $(function() {
+  "use strict";
 
   $('html').removeClass('no-js').addClass('js');
   
