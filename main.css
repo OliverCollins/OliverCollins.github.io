@@ -19,15 +19,6 @@ footer {
     background-color: hsla(0, 0%, 53%, 0.9);
 }
 
-footer > h4 {
-    padding-top: 15px;
-    padding-left: 50px;
-}
-
-footer > i {
-  padding-left: 50px;
-}
-
 .btns {
 	padding-top: 25px;
 	height: 10vh;
