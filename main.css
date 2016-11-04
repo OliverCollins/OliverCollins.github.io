@@ -28,6 +28,12 @@ footer > i {
   padding-left: 50px;
 }
 
+.btns {
+	padding-top: 25px;
+	height: 50vh;
+	text-align: center;
+}
+
 .footer-btn {
 	cursor:pointer;
 	height:32px;
