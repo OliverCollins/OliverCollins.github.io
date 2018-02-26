@@ -1,6 +1,6 @@
 # OliverCollins.github.io
 
-Personal website that includes a little bit about myself. Currently under construction, but will push updates regularly. <br />
+Personal website that includes a little bit about myself. <br />
 
 ### Resources
 
