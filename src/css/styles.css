@@ -1,25 +1,32 @@
+/* Disable horizontal scrolling */
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* Intro Section */
 
 .intro {
 	background-color: #F5F5F5;
 	padding-left: 5%;
 	padding-bottom: 20px;
+	padding-top: 40px;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .intro .name {
-	font-family: 'Quicksand', sans-serif;
 	font-size: 48px;
 }
 
 .intro .degree {
-	font-family: 'Quicksand', sans-serif;	
 	font-size: 14px;
 }
 
 /* About Me Section */
 
 .about-me {
-	padding-left: 5%;
+	padding-left: 6%;
 	font-family: 'Quicksand', sans-serif;
 }
 
@@ -35,4 +42,15 @@
 .about-me .content {
 	padding-top: 10px;
 	font-size: 14px;
+}
+
+/* Footer */
+
+.footer {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 12px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding-right: 10px;
 }
