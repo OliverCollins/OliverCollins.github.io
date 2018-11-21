@@ -1,12 +1,4 @@
-.name {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 48px;
-}
-
-.degree {
-	font-family: 'Quicksand', sans-serif;	
-	font-size: 14px;
-}
+/* Intro Section */
 
 .intro {
 	background-color: #F5F5F5;
@@ -14,23 +6,33 @@
 	padding-bottom: 20px;
 }
 
+.intro .name {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 48px;
+}
+
+.intro .degree {
+	font-family: 'Quicksand', sans-serif;	
+	font-size: 14px;
+}
+
+/* About Me Section */
+
 .about-me {
 	padding-left: 5%;
 	font-family: 'Quicksand', sans-serif;
 }
 
 .about-me img {
-	width: 240px;
+	width: 200px;
 	height: 240px;
 }
 
 .about-me .head {
-	padding-left: 40px;
 	font-size: 18px;
 }
 
 .about-me .content {
-	padding-left: 40px;
 	padding-top: 10px;
 	font-size: 14px;
 }
