@@ -9,4 +9,4 @@ https://fonts.google.com/ <br />
 ### Special Thanks To
 
 Anton Paras: https://github.com/acparas <br />
-Alexander Banh: https://github.com/wow1881
+Alex Banh: https://github.com/wow1881
