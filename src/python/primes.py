@@ -12,4 +12,3 @@ formatted = "".join(str(p))
 file = open("primes.txt", "a")
 file.write(formatted)
 file.close()
-

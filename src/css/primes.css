@@ -1,0 +1,17 @@
+.title {
+	font-size: 30px;
+	text-align: center;
+}
+
+.content {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.python_code {
+	background-color: RGB(242,242,242);
+	border: 1px solid #999;
+	text-align: left;
+	margin-left: 100px;
+	margin-right: 100px;
+}
