@@ -14,7 +14,7 @@
 
 	<div class="how_it_works">
 		<p class="htitle">How it works</p>
-		<p>Before starting, I developed an algorithm along the help of Bruno Astrolino E Silva<sup>1</sup> to print out prime numbers to a .txt file. In this case, I calculated roughly all primes under \(10^8\).</p>
+		<p>Before starting, I developed an algorithm along the help of Bruno Astrolino E Silva<sup>1</sup> to print out prime numbers to a .txt file. Using the Sieve of Eratosthenes method, and small optimizations, instead of iterating through every number, I instead loop through every other number up until In this case, I calculated roughly all primes under \(10^8\).</p>
 	</div>
 
 	<div class="python_code">
@@ -22,7 +22,7 @@
 			<code>
 				def primes(n):
    					sieve = [True] * n
-    				for i in range(3,int(n**0.5)+1,2):
+					for i in range(3,int(n**0.5)+1,2):
         				if sieve[i]:
            					sieve[i*i::2*i]=[False]*((n-i*i-1)//(2*i)+1)
     					return [2] + [i for i in range(3,n,2) if sieve[i]]
