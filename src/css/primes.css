@@ -4,18 +4,21 @@
 }
 
 .content {
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 7.5%;
+	padding-right: 7.5%;
 }
 
 .python_code {
 	background-color: RGB(242,242,242);
 	border: 1px solid #999;
-	margin-left: 100px;
-	margin-right: 100px;
+	margin: 20px 100px 0px 100px;
 }
 
-.ref {
-	margin-left: 10px;
-	margin-right: 10px;
+.references {
+	padding-left: 7.5%;
+	padding-right: 7.5%;
+}
+
+.how_it_works .htitle {
+	font-size: 22px;
 }
