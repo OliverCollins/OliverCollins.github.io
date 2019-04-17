@@ -11,7 +11,7 @@
 .python_code {
 	background-color: RGB(242,242,242);
 	border: 1px solid #999;
-	margin: 20px 100px 0px 100px;
+	padding-left: 20px;
 }
 
 .references {
@@ -21,4 +21,21 @@
 
 .how_it_works .htitle {
 	font-size: 22px;
+}
+
+.sub_title{
+	font-size: 22px;
+}
+
+.sieve {
+	margin: auto;
+	text-align: center;
+}
+
+.row {
+	display: flex;
+}
+
+.column {
+	flex: 50%;
 }

@@ -13,36 +13,42 @@
 <div class="content">
 
 	<div class="how_it_works">
-		<p class="htitle">How it works</p>
-		<p>Before starting, I developed an algorithm along the help of Bruno Astrolino E Silva<sup>1</sup> to print out prime numbers to a .txt file. Using the Sieve of Eratosthenes method, and small optimizations, instead of iterating through every number, I instead loop through every other number up until In this case, I calculated roughly all primes under \(10^8\).</p>
+		<p class="sub_title">Getting Primes</p>
+		<p>Before starting, I developed an algorithm along with the help of Bruno Astrolino E Silva<sup>1</sup> to print out prime numbers to a .txt file. I decided to use a slight variation to the Sieve of Eratosthenes algorithm which works similarly to the .gif below. which works  with small optimization tweaks, I instead loop through every other number up until \(\sqrt{n}\). In this case, I calculated roughly all primes under \(10^8\).</p>
 	</div>
 
-	<div class="python_code">
-		<pre>
-			<code>
-				def primes(n):
-   					sieve = [True] * n
-					for i in range(3,int(n**0.5)+1,2):
-        				if sieve[i]:
-           					sieve[i*i::2*i]=[False]*((n-i*i-1)//(2*i)+1)
-    					return [2] + [i for i in range(3,n,2) if sieve[i]]
+	<div class="row">
+		<div class="column python_code ">
+			<pre>
+				<code>
+def primes(n):
+	sieve = [True] * n
+	for i in range(3,int(n**0.5)+1,2):
+		if sieve[i]:
+			sieve[i*i::2*i]=[False]*((n-i*i-1)//(2*i)+1)
+	return [2] + [i for i in range(3,n,2) if sieve[i]]
 
-				num_primes = int(input("How many primes: "))
-				p = primes(num_primes)
-				formatted = "".join(str(p))
+num_primes = int(input("How many primes: "))
+p = primes(num_primes)
+formatted = "".join(str(p))
 
-				file = open("primes.txt", "a")
-				file.write(formatted)
-				file.close()
-			</code>
-		</pre>
+file = open("primes.txt", "a")
+file.write(formatted)
+file.close()
+				</code>
+			</pre>
+		</div>
+		<div class="column sieve">
+			<img src="../../assets/sieve.gif" alt="Sieve of Eratosthenes gif" height="270">
+		</div>
 	</div>
 </div>
 
 <div class="references">
-	<p>References</p>
+	<p class="sub_title">References</p>
 	<p class="ref">[1] Bruno Astrolino E Silva (https://stackoverflow.com/users/350331/robert-william-hanks). Fastest way to list all primes below N. Stack Overflow. URL: https://stackoverflow.com/questions/2068372/fastest-way-to-list-all-primes-below-n (version: 2019-01-03)</p>
-</div
+	<p class="ref">[2] SKopp. (n.d.). In <i>Wikipedia</i>. Retrieved April 16, 2019, from https://commons.wikimedia.org/wiki/File:Animation_Sieve_of_Eratosth.gif</p>
+</div>
 
 </body>
 
