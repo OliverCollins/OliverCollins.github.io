@@ -14,7 +14,9 @@
 
 	<div class="how_it_works">
 		<p class="sub_title">Getting Primes</p>
-		<p>Before starting, I developed an algorithm along with the help of Bruno Astrolino E Silva<sup>1</sup> to print out prime numbers to a .txt file. I decided to use a slight variation to the Sieve of Eratosthenes algorithm which works similarly to the .gif below. which works  with small optimization tweaks, I instead loop through every other number up until \(\sqrt{n}\). In this case, I calculated roughly all primes under \(10^8\).</p>
+		<p>Before starting, I developed an algorithm along with the help of Bruno Astrolino E Silva<sup>1</sup> to print out prime numbers to a .txt file. I decided to use a slight variation to the Sieve of Eratosthenes algorithm which works similarly to the .gif<sup>2</sup> below. The Sieve of Eratosthenes works by initializing every number up to \(\sqrt{n}\) to True then iterates through each number and adding it to a list of primes if the value is True and then setting all integers divisible by the number to False. I also modified this algorithm by only iterating through odd numbers and start looking for integers that are \(n^2\) larger than the current index. These tweaks optimize the algorithm only slightly but save valuable resources and time when calculating large numbers of prime numbers</p>
+
+		</p>After I calculate all primes under \(10^8\), I then write them to a file to access them later for processing.</p>
 	</div>
 
 	<div class="row">
