@@ -1,22 +1,17 @@
+body {
+	padding-left: 7.5%;
+	padding-right: 7.5%;
+}
+
 .title {
 	font-size: 30px;
 	text-align: center;
-}
-
-.content {
-	padding-left: 7.5%;
-	padding-right: 7.5%;
 }
 
 .python_code {
 	background-color: RGB(242,242,242);
 	border: 1px solid #999;
 	padding-left: 20px;
-}
-
-.references {
-	padding-left: 7.5%;
-	padding-right: 7.5%;
 }
 
 .how_it_works .htitle {
