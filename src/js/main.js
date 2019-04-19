@@ -193,7 +193,7 @@ var svg = d3.select("#my_dataviz")
         "translate(" + margin.left + "," + margin.top + ")");
 
 // Read data
-d3.csv('./../csv/treedata.csv', function(data) {
+d3.csv('https://raw.githubusercontent.com/OliverCollins/OliverCollins.github.io/master/src/csv/treedata.csv', function(data) {
 
   // stratify the data: reformatting for d3.js
   var root = d3.stratify()
