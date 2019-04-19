@@ -15,8 +15,6 @@
 			<div class="how_it_works">
 				<p class="sub_title">Getting Primes</p>
 				<p>Before starting, I developed an algorithm along with the help of Bruno Astrolino E Silva<sup>1</sup> to print out prime numbers to a .txt file. I decided to use a slight variation to the Sieve of Eratosthenes algorithm which works similarly to the .gif<sup>2</sup> below. The Sieve of Eratosthenes works by initializing every number up to \(\sqrt{n}\) to True then iterates through each number and adding it to a list of primes if the value is True and then setting all integers divisible by the number to False. I also modified this algorithm by only iterating through odd numbers and start looking for integers that are \(n^2\) larger than the current index. These tweaks optimize the algorithm only slightly but save valuable resources and time when calculating large numbers of prime numbers</p>
-
-				</p>After I calculate all primes under \(10^8\), I then write them to a file to access them later for processing.</p>
 			</div>
 
 			<div class="row">
@@ -44,11 +42,15 @@ file.close()
 					<img src="../../assets/sieve.gif" alt="Sieve of Eratosthenes gif" height="270">
 				</div>
 			</div>
+			</p>After I calculate all primes under \(10^8\), I then write them to a file to access them later for processing. I chose to calculate primes only up to 100,000,000 merely because any factor larger would require a substantial amount more computing power and the findings would be minimal.</p>
 		</div>
+
 
 		<div class="visualizations">
 			<p class="sub_title">Findings</p>
+			<p>The primary [talk more here]. You can find the source code <a href="src_code.html">here</a></p>
 			<div id="my_dataviz"></div>
+			<p>Here, I found the percentage of numbers that are prime below certain thresholds (\(10^1\), \(10^2\), ..., \(10^7\), \(10^8\)).</p>
 			<div id="screePlot"></div>
 		</div>
 
