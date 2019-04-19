@@ -112,42 +112,42 @@ var screePlotDataOptions = {
 
 var screePlotData = [
       {
-        "factor": 1,
+        "factor": '10',
         "eigenvalue": 40,
         "cumulative_eigenvalue":60
       },
       {
-        "factor": 2,
+        "factor": '100',
         "eigenvalue": 25,
         "cumulative_eigenvalue":75
       },
       {
-        "factor": 3,
+        "factor": '1000',
         "eigenvalue": 16.8,
         "cumulative_eigenvalue":81.2
       },
       {
-        "factor": 4,
+        "factor": '10000',
         "eigenvalue": 12.29,
         "cumulative_eigenvalue":87.71
       },
       {
-        "factor": 5,
+        "factor": '100000',
         "eigenvalue": 9.592,
         "cumulative_eigenvalue":90.408
       },
       {
-        "factor": 6,
+        "factor": '1000000',
         "eigenvalue": 7.8498,
         "cumulative_eigenvalue":92.1502
       },
       {
-        "factor": 7,
+        "factor": '10000000',
         "eigenvalue": 6.64579,
         "cumulative_eigenvalue":93.35421
       },
       {
-        "factor": 8,
+        "factor": '100000000',
         "eigenvalue": 5.761455,
         "cumulative_eigenvalue":94.238545
       }

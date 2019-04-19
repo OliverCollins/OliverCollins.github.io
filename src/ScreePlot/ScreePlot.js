@@ -87,7 +87,6 @@ function ScreePlot(options) {
             }
             return d[1].factor <= parent.factorSelected ? parent.selBarFill : parent.barFill
         });
-
     }
 
     var changeBarStroke = function(color){
@@ -306,7 +305,7 @@ function ScreePlot(options) {
             .style("text-anchor", "end")
             .attr("font-family", "sans-serif")
             .attr("font-size", "1em")
-            .text("X Axis");
+            .text("Numbers");
 
         // text label for the y axis
         parent.yAxisLabel = parent.g.append("text")
@@ -318,7 +317,7 @@ function ScreePlot(options) {
             .attr("font-family", "sans-serif")
             .attr("font-size", "1em")
             .style("text-anchor", "end")
-            .text("Y Axis");
+            .text("% of primes");
 
     }
 
