@@ -2,6 +2,7 @@
 
 	<head>
 	<link rel="stylesheet" type="text/css" href="../css/primes.css">
+	<link rel="stylesheet" type="text/css" href='./../ScreePlot/ScreePlot.css'>
 	</head>
 
 	<body>
@@ -47,6 +48,7 @@ file.close()
 
 		<div class="visualizations">
 			<p class="sub_title">Findings</p>
+			<div id="screePlot"></div>
 		</div>
 
 		<div class="references">
@@ -57,5 +59,10 @@ file.close()
 	</body>
 
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+	<script src='./../ScreePlot/libs/d3v4.js'></script>
+	<script src='./../ScreePlot/libs/jquery-3.2.1.min.js'></script>
+	<script src='./../ScreePlot/ScreePlot.js'></script>
+	<script src='./../js/main.js'></script>
+	<script src='./../js/ScreePlotData.js'></script>
 
 </html>
