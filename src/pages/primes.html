@@ -48,58 +48,64 @@ file.close()
 
 		<div class="visualizations">
 			<p class="sub_title">Findings</p>
-			<p>The primary [talk more here]. You can find the source code <a href="src_code.html">here</a></p>
+			<p>The primary motivation for this project is to find interesting patterns and to learn about the theory of prime numbers. I developed most of this project in Python, and you can find the source code <a href="src_code.html">here</a>.</p>
 			<div id="my_dataviz"></div>
 			<p>Here, I found the percentage of numbers that are prime below certain thresholds (\(10^1\), \(10^2\), ..., \(10^7\), \(10^8\)).</p>
 			<div id="screePlot"></div>
 			<p>From the information above, there is seems quite obvious that the percentage of primes are decreasing at a logarithmic rate. In fact, </p>
-			<Table BORDER="3" WIDTH="30%" CELLPADDING="3" CELLSPACING="3">
-				<TR>
-					<TD>$$x$$</TD>
-					<TD>$$\pi(x)$$</TD>
-					<TD>$$\frac{\pi(x)}{x}$$</TD>
-				</TR>
-				<TR>
-					<TD>\(10^1\)</TD>
-					<TD>\(4\)</TD>
-					<TD>\(0.4\)</TD>
-				</TR>
-				<TR>
-					<TD>\(10^2\)</TD>
-					<TD>\(25\)</TD>
-					<TD>\(0.25\)</TD>
-				</TR>
-				<TR>
-					<TD>\(10^3\)</TD>
-					<TD>\(168\)</TD>
-					<TD>\(0.168\)</TD>
-				</TR>
-				<TR>
-					<TD>\(10^4\)</TD>
-					<TD>\(1229\)</TD>
-					<TD>\(0.1229\)</TD>
-				</TR>
-				<TR>
-					<TD>\(10^5\)</TD>
-					<TD>\(9592\)</TD>
-					<TD>\(0.09592\)</TD>
-				</TR>
-				<TR>
-					<TD>\(10^6\)</TD>
-					<TD>\(78498\)</TD>
-					<TD>\(0.078498\)</TD>
-				</TR>
-				<TR>
-					<TD>\(10^7\)</TD>
-					<TD>\(664579\)</TD>
-					<TD>\(0.066458\)</TD>
-				</TR>
-				<TR>
-					<TD>\(10^8\)</TD>
-					<TD>\(5761455\)</TD>
-					<TD>\(0.057615\)</TD>
-				</TR>
-			</Table>
+			<div class="row">
+				<Table class="column" BORDER="3" WIDTH="30%" CELLPADDING="3" CELLSPACING="3">
+					<TR>
+						<TD>$$x$$</TD>
+						<TD>$$\pi(x)$$</TD>
+						<TD>$$\frac{\pi(x)}{x}$$</TD>
+					</TR>
+					<TR>
+						<TD>\(10^1\)</TD>
+						<TD>\(4\)</TD>
+						<TD>\(0.4\)</TD>
+					</TR>
+					<TR>
+						<TD>\(10^2\)</TD>
+						<TD>\(25\)</TD>
+						<TD>\(0.25\)</TD>
+					</TR>
+					<TR>
+						<TD>\(10^3\)</TD>
+						<TD>\(168\)</TD>
+						<TD>\(0.168\)</TD>
+					</TR>
+					<TR>
+						<TD>\(10^4\)</TD>
+						<TD>\(1229\)</TD>
+						<TD>\(0.1229\)</TD>
+					</TR>
+					<TR>
+						<TD>\(10^5\)</TD>
+						<TD>\(9592\)</TD>
+						<TD>\(0.09592\)</TD>
+					</TR>
+					<TR>
+						<TD>\(10^6\)</TD>
+						<TD>\(78498\)</TD>
+						<TD>\(0.078498\)</TD>
+					</TR>
+					<TR>
+						<TD>\(10^7\)</TD>
+						<TD>\(664579\)</TD>
+						<TD>\(0.066458\)</TD>
+					</TR>
+					<TR>
+						<TD>\(10^8\)</TD>
+						<TD>\(5761455\)</TD>
+						<TD>\(0.057615\)</TD>
+					</TR>
+				</Table>
+				<div class="column">
+					hello
+				</div>
+			</div>
+			<p>In conclusion, prime numbers obtain a unique property that seemingly follow an almost predictable pattern while yet remaining extraordinarily complex to calculate.</p>
 		</div>
 
 		<div class="references">
