@@ -14,7 +14,7 @@
 
 			<div class="how_it_works">
 				<p class="sub_title">Getting Primes</p>
-				<p>Before starting, I developed an algorithm along with the help of Bruno Astrolino E Silva<sup>1</sup> to print out prime numbers to a .txt file. I decided to use a slight variation to the Sieve of Eratosthenes algorithm which works similarly to the .gif<sup>2</sup> below. The Sieve of Eratosthenes works by initializing every number up to \(\sqrt{n}\) to True then iterates through each number and adding it to a list of primes if the value is True and then setting all integers divisible by the number to False. I also modified this algorithm by only iterating through odd numbers and start looking for integers that are \(n^2\) larger than the current index. These tweaks optimize the algorithm only slightly but save valuable resources and time when calculating large numbers of prime numbers</p>
+				<p>Before starting, I developed an algorithm along with the help of Bruno Astrolino E Silva<sup>1</sup> to print out prime numbers to a .txt file. I decided to use a slight variation to the Sieve of Eratosthenes algorithm which works similarly to the .gif<sup>2</sup> below. The Sieve of Eratosthenes works by initializing every number up to \(\sqrt{n}\) to True then iterates through each number and adding it to a list of primes if the value is True and then setting all integers divisible by the number to False. I also modified this algorithm by only iterating through odd numbers and start looking for integers that are \(n^2\) larger than the current index. These tweaks optimize the algorithm only slightly but save valuable resources and time when calculating large numbers of prime numbers.</p>
 			</div>
 
 			<div class="row">
@@ -52,12 +52,61 @@ file.close()
 			<div id="my_dataviz"></div>
 			<p>Here, I found the percentage of numbers that are prime below certain thresholds (\(10^1\), \(10^2\), ..., \(10^7\), \(10^8\)).</p>
 			<div id="screePlot"></div>
+			<p>From the information above, there is seems quite obvious that the percentage of primes are decreasing at a logarithmic rate. In fact, </p>
+			<Table BORDER="3" WIDTH="30%" CELLPADDING="3" CELLSPACING="3">
+				<TR>
+					<TD>$$x$$</TD>
+					<TD>$$\pi(x)$$</TD>
+					<TD>$$\frac{\pi(x)}{x}$$</TD>
+				</TR>
+				<TR>
+					<TD>\(10^1\)</TD>
+					<TD>\(4\)</TD>
+					<TD>\(0.4\)</TD>
+				</TR>
+				<TR>
+					<TD>\(10^2\)</TD>
+					<TD>\(25\)</TD>
+					<TD>\(0.25\)</TD>
+				</TR>
+				<TR>
+					<TD>\(10^3\)</TD>
+					<TD>\(168\)</TD>
+					<TD>\(0.168\)</TD>
+				</TR>
+				<TR>
+					<TD>\(10^4\)</TD>
+					<TD>\(1229\)</TD>
+					<TD>\(0.1229\)</TD>
+				</TR>
+				<TR>
+					<TD>\(10^5\)</TD>
+					<TD>\(9592\)</TD>
+					<TD>\(0.09592\)</TD>
+				</TR>
+				<TR>
+					<TD>\(10^6\)</TD>
+					<TD>\(78498\)</TD>
+					<TD>\(0.078498\)</TD>
+				</TR>
+				<TR>
+					<TD>\(10^7\)</TD>
+					<TD>\(664579\)</TD>
+					<TD>\(0.066458\)</TD>
+				</TR>
+				<TR>
+					<TD>\(10^8\)</TD>
+					<TD>\(5761455\)</TD>
+					<TD>\(0.057615\)</TD>
+				</TR>
+			</Table>
 		</div>
 
 		<div class="references">
 			<p class="sub_title">References</p>
 			<p class="ref">[1] Bruno Astrolino E Silva (https://stackoverflow.com/users/350331/robert-william-hanks). Fastest way to list all primes below N. Stack Overflow. URL: https://stackoverflow.com/questions/2068372/fastest-way-to-list-all-primes-below-n (version: 2019-01-03)</p>
 			<p class="ref">[2] SKopp. (n.d.). In <i>Wikipedia</i>. Retrieved April 16, 2019, from https://commons.wikimedia.org/wiki/File:Animation_Sieve_of_Eratosth.gif</p>
+			<p class="ref">[3] Barthel, Jim, et al. “Visualising the Distribution of Primes.” Math.uni.lu, University of Luxembourg, 2015, math.uni.lu/eml/projects/reports/prime-distribution.pdf.</p>
 		</div>
 	</body>
 
