@@ -7,7 +7,7 @@
 
 	<body>
 		<div class="title">
-			<p>Patterns in Prime Numbers</p>
+			<p>An Investigation on Prime Numbers</p>
 		</div>
 
 		<div class="content">
@@ -48,10 +48,10 @@ file.close()
 		<hr>
 		<div class="visualizations">
 			<p class="sub_title">Findings</p>
-			<p>The primary motivation for this project is to find interesting patterns and to learn about the theory of prime numbers. I developed most of this project in Python, and you can find the source code <a href="src_code.html">here</a>.</p>
+			<p>The primary motivation for this project is to find interesting patterns and to learn about the theory of prime numbers. I developed most of this project in Python, and you can find the source code <a href="src_code.html">here</a>. I developed the source code in such a way that someone can easily pick up my work and continue further analysis. Making my code open-source will help the prime number community further find patterns in primes and potential other patterns in numbers.</p>
 			<div class="row">
 				<div class="column">
-					I first started by looking at the last digit of each prime number. For example, for 23 the last digit would be 3, and for 199 the last digit would be 9. Unfortunately, it seems as if there is a uniform distribution between prime numbers having a 1, 3, 7, and 9 none having more than a 1% deviation from another.
+					The first pattern I started looking for are the last digits of each prime number. For example, for 23 the last digit would be 3, for 31,489 the last digit would be 9, and for 104,597 the last digit would be 7. Unfortunately, it seems as if there is a uniform distribution between prime numbers having a 1, 3, 7, and 9 as their last digit all while none of these digits have more than a 1% deviation from another.
 					<br><br>
 					If there were some pattern within the occurrences of last digits, we could tie in some algorithm to find the probability that some significant number is a prime based on its last digit. But, from what we can see, it is undoubtedly apparent to find the number of prime numbers ending with one of the numbers in the set of [1, 3, 7, 9] to be ~\(\frac{n}{4}\), where n is the count of numbers.
 				</div>
@@ -134,11 +134,26 @@ file.close()
 						\(log(n)\) ~ \(log(\frac{p_n}{log(p_n)})\) = \(log(p_n)-log(log(p_n))\), as \(n\rightarrow \infty\)
 					</center>
 					<center>
-						
+						$$\lim_{m\to \infty} \frac{log(n)}{log(p_n)}=\lim_{m\to \infty}\frac{log(p_n)-log(log(p_n))}{log(p_n)}$$
+					</center>
+					<center>
+						$$=\lim_{m\to \infty}1-\frac{log(log(p_n))}{log(p_n)}=\lim_{m\to \infty}1-\frac{\frac{1}{log(p_m)}\cdot\frac{1}{p_n}}{\frac{1}{p_n}}$$
+					</center>
+					<center>
+						$$=\lim_{m\to \infty}1-\frac{1}{log(p_n)}=1$$
+					</center>
+					<br>
+					<br>
+					<center>
+						Therefore, from above, there is a rough approximation for:
+					</center>
+					<br>
+					<center>
+						\(p_n \sim n\cdot log(n),\) as \(n \rightarrow \infty\)
 					</center>
 				</div>
 			</div>
-			<p>In conclusion, prime numbers obtain a unique property that seemingly follow an almost predictable pattern while yet remaining extraordinarily complex to calculate.</p>
+			<p>In conclusion, prime numbers obtain a unique property that seemingly follows an almost predictable pattern while yet remaining extraordinarily complex to calculate. We determined that the last digit of prime numbers do not correlate with determining the probability of a prime number. We also discovered that the number of prime numbers found seems to decrease at a logarithmic rate, a rate of \(log(p_n)\). Hopefully, though, with the open-source code I developed, people will pick up my project and continue working and finding further data.</p>
 		</div>
 
 		<hr>
