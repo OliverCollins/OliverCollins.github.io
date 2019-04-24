@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>math_1012</title>
+<title>src_code</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13115,30 +13115,18 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import necessary libraries</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pylab</span> <span class="kn">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">random</span>
 <span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">mean</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">text_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;./OliverCollins.github.io/src/python/primes.txt&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">primes</span> <span class="o">=</span> <span class="n">text_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13154,8 +13142,11 @@ div#notebook {
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>5761455
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/usr/local/lib/python2.7/site-packages/scipy/spatial/__init__.py:96: ImportWarning: Not importing directory &#39;/usr/local/lib/python2.7/site-packages/scipy/spatial/qhull&#39;: missing __init__.py
+  from .qhull import *
+/usr/local/lib/python2.7/site-packages/scipy/optimize/_minimize.py:37: ImportWarning: Not importing directory &#39;/usr/local/lib/python2.7/site-packages/scipy/optimize/lbfgsb&#39;: missing __init__.py
+  from .lbfgsb import _minimize_lbfgsb
 </pre>
 </div>
 </div>
@@ -13166,10 +13157,28 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">last_digit</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span><span class="mi">0</span><span class="p">}</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Grab prime numbers from .txt file</span>
+<span class="n">text_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;./OliverCollins.github.io/src/python/primes.txt&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
+
+<span class="n">primes</span> <span class="o">=</span> <span class="n">text_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+<span class="n">primes2</span> <span class="o">=</span> <span class="n">primes</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Find last digit from all prime numbers</span>
+<span class="n">last_digit</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span><span class="mi">0</span><span class="p">}</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">primes</span><span class="p">)):</span>
     <span class="k">if</span> <span class="n">primes</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;1&#39;</span><span class="p">:</span>
         <span class="n">last_digit</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -13212,12 +13221,52 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">last_digit</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">last_digit</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Count&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Count of primes with last digit&#39;</span><span class="p">)</span>
+ 
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">num_primes</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">percentage</span> <span class="o">=</span> <span class="p">[]</span>
 
+<span class="c1"># Grab percentage of primes per range</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">7</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">10</span><span class="p">:</span> <span class="c1"># 10^1</span>
         <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="mi">2</span><span class="p">)),</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
@@ -13276,6 +13325,167 @@ div#notebook {
 <pre>[0.4, 0.25, 0.168, 0.1229, 0.09592, 0.078498, 0.0664579, 0.05761455]
 </pre>
 </div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Remove brackets from first and last numbers</span>
+<span class="n">primes2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">primes2</span><span class="p">[</span><span class="mi">0</span><span class="p">])[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">primes2</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">primes2</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># Convert list of primes to ints</span>
+<span class="n">primes2</span> <span class="o">=</span> <span class="p">[</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">primes2</span> <span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># ~5 minutes to run</span>
+<span class="n">new</span><span class="p">,</span> <span class="n">counter</span> <span class="o">=</span> <span class="p">{},</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="o">**</span><span class="mi">8</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">counter</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">primes2</span><span class="p">):</span>
+        <span class="k">break</span>
+    <span class="k">if</span> <span class="n">primes2</span><span class="p">[</span><span class="n">counter</span><span class="p">]</span> <span class="o">==</span> <span class="n">x</span><span class="p">:</span>
+        <span class="n">new</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">new</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># ~40 minutes</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">new</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Number&#39;</span><span class="p">,</span> <span class="s1">&#39;isPrime&#39;</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[9]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Number</th>
+      <th>isPrime</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>6</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>8</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>9</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
 </div>
 
 </div>
