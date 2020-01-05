@@ -1,0 +1,38 @@
+/* Disable horizontal scrolling */
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Intro Section */
+
+.intro {
+	background-color: #F5F5F5;
+	padding-left: 5%;
+	padding-bottom: 20px;
+	padding-top: 40px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.intro .title {
+	font-size: 48px;
+}
+
+/* About Me Section */
+
+.newsletters {
+	padding-left: 6%;
+}
+
+.newsletters img {
+	width: 220px;
+	height: 300px;
+}
+
+.newsletters p {
+	font-family: 'Quicksand', sans-serif;
+	padding-left: 94px;
+	padding-top: 8px;
+	font-size: 18px;
+}
