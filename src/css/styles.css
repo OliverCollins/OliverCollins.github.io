@@ -48,9 +48,14 @@ html, body {
 
 .footer {
 	font-family: 'Quicksand', sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	position: absolute;
-	bottom: 0;
+	bottom: 0px;
+	right: 50px;
 	padding-top: 20px;
 	padding-left: 6%;
+}
+
+.footer p {
+	word-spacing: 12px;
 }
