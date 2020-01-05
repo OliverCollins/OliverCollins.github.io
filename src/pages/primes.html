@@ -2,7 +2,7 @@
 
 	<head>
 	<link rel="stylesheet" type="text/css" href="../css/primes.css">
-	<link rel="stylesheet" type="text/css" href='./../ScreePlot/ScreePlot.css'>
+	<link rel="stylesheet" type="text/css" href='../css/ScreePlot/ScreePlot.css'>
 	</head>
 
 	<body>
@@ -39,7 +39,7 @@ file.close()
 					</pre>
 				</div>
 				<div class="column sieve">
-					<img src="../../assets/sieve.gif" alt="Sieve of Eratosthenes gif" height="270">
+					<img src="../../assets/images/sieve.gif" alt="Sieve of Eratosthenes gif" height="270">
 				</div>
 			</div>
 			</p>After I calculate all primes under \(10^8\), I then write them to a file to access them later for processing. I chose to calculate primes only up to 100,000,000 merely because any factor larger would require a substantial amount more computing power and the findings would be minimal.</p>
@@ -56,7 +56,7 @@ file.close()
 					If there were some pattern within the occurrences of last digits, we could tie in some algorithm to find the probability that some significant number is a prime based on its last digit. But, from what we can see, it is undoubtedly apparent to find the number of prime numbers ending with one of the numbers in the set of [1, 3, 7, 9] to be ~\(\frac{n}{4}\), where n is the count of numbers.
 				</div>
 				<div class="column">
-					<img src="../../assets/last_digit.png" alt="Last digits of prime #s">
+					<img src="../../assets/images/last_digit.png" alt="Last digits of prime #s">
 				</div>
 			</div>
 			<p>The next pattern I tried to find is the percentage of numbers that are prime under n. From general intuition, we all know that the higher the number, the higher the probability that that number will be divisible by some other number. However, determining this increase in likelihood per number is what we are looking to find. From the graph below, I found the percentage of numbers that are prime below certain thresholds (\(10^1\), \(10^2\), ..., \(10^7\), \(10^8\)).
@@ -166,9 +166,9 @@ file.close()
 	</body>
 
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-	<script src='./../ScreePlot/libs/d3v4.js'></script>
-	<script src='./../ScreePlot/libs/jquery-3.2.1.min.js'></script>
-	<script src='./../ScreePlot/ScreePlot.js'></script>
+	<script src='../css/ScreePlot/libs/d3v4.js'></script>
+	<script src='../css/ScreePlot/libs/jquery-3.2.1.min.js'></script>
+	<script src='../css/ScreePlot/ScreePlot.js'></script>
 	<script src='./../js/main.js'></script>
 	<script src='./../js/ScreePlotData.js'></script>
 </html>

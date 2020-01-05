@@ -9,6 +9,6 @@ num_primes = int(input("How many primes: "))
 p = primes(num_primes)
 formatted = "".join(str(p))
 
-file = open("primes.txt", "a")
+file = open("../../assets/txt/primes.txt", "a")
 file.write(formatted)
 file.close()
