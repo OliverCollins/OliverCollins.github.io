@@ -1,0 +1,42 @@
+/* Disable horizontal scrolling */
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Intro Section */
+
+.intro {
+	background-color: #F5F5F5;
+	padding-left: 5%;
+	padding-bottom: 20px;
+	padding-top: 40px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.intro .title {
+	font-size: 48px;
+}
+
+/* About Me Section */
+
+.contact-info {
+	padding-left: 10%;
+	font-size: 18px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.contact-info input {
+	border: 0;
+}
+
+.contact-info img {
+	width: 16px;
+	height: 16px;
+}
+
+.contact-info p {
+	padding-left: 94px;
+	padding-top: 8px;
+}
