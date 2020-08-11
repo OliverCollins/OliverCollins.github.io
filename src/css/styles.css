@@ -26,13 +26,21 @@ html, body {
 /* About Me Section */
 
 .about-me {
-	padding-left: 6%;
 	font-family: 'Quicksand', sans-serif;
 }
 
 .about-me img {
-	width: 200px;
-	height: 240px;
+	filter: grayscale(50%);
+	width: 420px;
+	height: 100%;
+}
+
+.pic {
+	margin-right: 300px;
+}
+
+.about-me text {
+	display: block;
 }
 
 .about-me .head {
