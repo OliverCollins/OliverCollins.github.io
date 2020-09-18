@@ -57,8 +57,8 @@ html, body {
 .footer {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 14px;
-	position: absolute;
-	bottom: 0px;
+	position: fixed;
+	bottom: 0;
 	right: 50px;
 	padding-top: 20px;
 	padding-left: 6%;
