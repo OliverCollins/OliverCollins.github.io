@@ -6,7 +6,6 @@ html, body {
 }
 
 /* Intro Section */
-
 .intro {
 	background-color: #F5F5F5;
 	padding-left: 5%;
@@ -20,9 +19,8 @@ html, body {
 }
 
 /* About Me Section */
-
 .newsletters {
-	padding-left: 10%;
+  padding-left: 120px;
 }
 
 .newsletters img {
